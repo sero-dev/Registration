@@ -3,13 +3,13 @@
  * Purpose:
  *
  * @author Sean Rodriguez <sean.rodriguez@outlook.com>
- * @copyright Sean Rodriguez October 21, 2016
+ * @since October 21, 2016
  * @version 1.0
  *
  */
 
 abstract class Student {
-    static int numberOfStudents = 0;
+    private static int numberOfStudents = 0;
 
     int id;
     String firstName, lastName;
@@ -28,7 +28,7 @@ abstract class Student {
             birthDate = new Date(day, month, year);
         } catch(MyInvalidDateException e) { // Catch invalid value
             birthDate = new Date();
-        };
+        }
 
         numberOfStudents++; // Increment when a new Student is created
     }

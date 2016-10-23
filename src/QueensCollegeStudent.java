@@ -3,13 +3,13 @@
  * Purpose:
  *
  * @author Sean Rodriguez <sean.rodriguez@outlook.com>
- * @copyright Sean Rodriguez October 21, 2016
+ * @since October 21, 2016
  * @version 1.0
  *
  */
 
 class QueensCollegeStudent extends Student {
-    String venusLogin;
+    private String venusLogin;
 
     public QueensCollegeStudent(String firstName, String lastName,
                                 int id, double gpa, int year, int month, int day,
@@ -31,7 +31,7 @@ class QueensCollegeStudent extends Student {
         System.out.println("Student Name: " + firstName + " " + lastName);
         System.out.println("CUNYFirst ID: " + id);
         System.out.println("GPA: " + gpa);
-        System.out.print("Birthdate: "); birthDate.print();
+        System.out.print("Birth Date: "); birthDate.print();
         System.out.println("Venus Login: " + venusLogin);
     }
 

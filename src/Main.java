@@ -1,15 +1,14 @@
+import javax.swing.JOptionPane;
+
 /**
  * Project Name: Registration
  * Purpose:
  *
  * @author Sean Rodriguez <sean.rodriguez@outlook.com>
- * @copyright Sean Rodriguez October 21, 2016
+ * @since October 21, 2016
  * @version 1.0
  *
  */
-
-import javax.swing.JOptionPane;
-
 class Main {
     public static void main(String[] args) throws MyInvalidDateException {
 
