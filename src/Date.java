@@ -11,13 +11,13 @@
 class Date {
     private int year, month, day;
 
-    public Date() {
+    Date() {
         year = 1950;
         month = 1;
         day = 1;
     }
 
-    public Date(int day, int month, int year) throws MyInvalidDateException {
+    Date(int day, int month, int year) throws MyInvalidDateException {
         // Checks for leap year
         Boolean isLeapYear = (year % 100 == 0
                 && year % 400 == 0
@@ -55,7 +55,7 @@ class Date {
         }
     }
 
-    public void print() {
+    void print() {
         System.out.println(month + "/" + day + "/" + year);
     }
 }
