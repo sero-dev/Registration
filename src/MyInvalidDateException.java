@@ -9,11 +9,11 @@
  */
 
 class MyInvalidDateException extends Exception {
-    public MyInvalidDateException() {
+    MyInvalidDateException() {
         super();
     }
 
-    public MyInvalidDateException(String e) {
+    MyInvalidDateException(String e) {
         super(e);
     }
 }
