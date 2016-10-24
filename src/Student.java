@@ -16,7 +16,7 @@ abstract class Student {
     double gpa;
     Date birthDate;
 
-    public Student(String firstName, String lastName,
+    Student(String firstName, String lastName,
                    int id, double gpa, int year, int month, int day)
             throws MyInvalidDateException {
         this.firstName = firstName;
@@ -33,14 +33,14 @@ abstract class Student {
         numberOfStudents++; // Increment when a new Student is created
     }
 
-    public static int getNumberOfStudents() {
+    static int getNumberOfStudents() {
         return numberOfStudents;
     }
 
     //Get Accessors for variables
-    public double getGPA() {return gpa;}
-    public int getId() {return id;}
-    public String getFirstName() {return firstName;}
-    public String getLastName() {return lastName;}
-    public Date getBirthDate() {return birthDate;}
+    double getGPA() {return gpa;}
+    int getId() {return id;}
+    String getFirstName() {return firstName;}
+    String getLastName() {return lastName;}
+    Date getBirthDate() {return birthDate;}
 }

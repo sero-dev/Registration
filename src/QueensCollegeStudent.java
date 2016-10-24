@@ -11,7 +11,7 @@
 class QueensCollegeStudent extends Student {
     private String venusLogin;
 
-    public QueensCollegeStudent(String firstName, String lastName,
+    QueensCollegeStudent(String firstName, String lastName,
                                 int id, double gpa, int year, int month, int day,
                                 String venusLogin) throws MyInvalidDateException {
         super(firstName, lastName, id, gpa, year, month, day);
@@ -19,7 +19,7 @@ class QueensCollegeStudent extends Student {
     }
 
     // Checks if the Venus Login is valid
-    public Boolean isValidVenusLogin() {
+    Boolean isValidVenusLogin() {
         String login = "" + lastName.toLowerCase().charAt(0) + lastName.charAt(1) +
                 firstName.toLowerCase().charAt(0) + firstName.charAt(1) + id % 10000;
 
@@ -27,7 +27,7 @@ class QueensCollegeStudent extends Student {
     }
 
     // Displays the student's information
-    public void displayAttributes() {
+    void displayAttributes() {
         System.out.println("Student Name: " + firstName + " " + lastName);
         System.out.println("CUNYFirst ID: " + id);
         System.out.println("GPA: " + gpa);
@@ -35,5 +35,5 @@ class QueensCollegeStudent extends Student {
         System.out.println("Venus Login: " + venusLogin);
     }
 
-    public String getVenusLogin() {return venusLogin;}
+    String getVenusLogin() {return venusLogin;}
 }
