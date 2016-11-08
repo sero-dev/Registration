@@ -16,17 +16,12 @@ public class Main {
     public static void main(String[] args) throws IOException, MyInvalidDateException {
 
         // Prompt user for file names to write to and read from
-//        String filename1 = JOptionPane.showInputDialog(
-//                "Choose a file to write to:");
-//        String filename1 = JOptionPane.showInputDialog(
-//                "Choose a file to write to:");
-//        String filename1 = JOptionPane.showInputDialog(
-//                "Choose a file to write to:");
-
-        String filename1 = "cs111.txt";
-        String filename2 = "cs211.txt";
-        String filename3 = "cs212.txt";
-
+        String filename1 = JOptionPane.showInputDialog(
+                "Choose a file to write to:");
+        String filename2 = JOptionPane.showInputDialog(
+                "Choose a file to write to:");
+        String filename3 = JOptionPane.showInputDialog(
+                "Choose a file to write to:");
 
         // Create three write Threads that pass in a filename to write to
         WriteThread wThread1 = new WriteThread(filename1);
