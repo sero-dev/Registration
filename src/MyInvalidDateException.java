@@ -1,19 +1,26 @@
 /**
- * Project Name: Registration
- * Purpose:
+ * Project Name: Registration<br>
+ * File Name: MyInvalidDateException.java<br>
+ * Purpose: Exception to catch invalid dates
  *
- * @author Sean Rodriguez <sean.rodriguez@outlook.com>
+ * @author Sean Rodriguez
  * @since October 21, 2016
- * @version 1.0
- *
+ * @version %I%, %G%
  */
 
 class MyInvalidDateException extends Exception {
-    MyInvalidDateException() {
+    /**
+     * Calls exception
+     */
+    public MyInvalidDateException() {
         super();
     }
 
-    MyInvalidDateException(String e) {
-        super(e);
+    /**
+     * Calls exception with a message
+     * @param message error message to be displayed.
+     */
+    MyInvalidDateException(String message) {
+        super(message);
     }
 }
